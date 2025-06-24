@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Навигация</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="navigation">
+    <div class="container">
+      <div class="navigation__inner">
+        <ul class="navigation__list">
+          <li><a href="slider.html">Продвижение</a></li>
+          <li><a href="slider2.html">Разработка</a></li>
+          <li><a href="slider3.html">Реклама</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="sliders.js"></script>
+</body>
+
+</html>
+
+<style>
+  .navigation {
+    padding: 50px 0;
+    font-family: 'MuseoSansCyrl';
+  }
+
+  .navigation__list {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 24px;
+  }
+
+  .navigation__list li a {
+    font-size: 24px;
+    line-height: 110%;
+  }
+
+  .navigation__list li a:hover {
+    opacity: 0.7;
+  }
+</style>
