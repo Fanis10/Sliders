@@ -1460,11 +1460,11 @@ li {
 
 @media screen and (max-width: 450px) {
   .slider .seo-img {
-    max-width: 250px;
+    max-width: 200px;
     margin-bottom: 30px;
   }
   .slide__title {
-    font-size: 24px;
+    font-size: 22px;
   }
   .slide__title2 {
     font-size: 38px;
@@ -1502,7 +1502,10 @@ li {
     height: 14px;
   }
   .slide__btn {
-    height: 60px;
+    height: 54px;
+  }
+  .slide__btn span {
+    font-size: 16px;
   }
   .slide__btn span {
     font-size: 18px;
@@ -1536,6 +1539,9 @@ li {
   }
   .slide__group {
     gap: 30px;
+  }
+  .slide__group3 {
+    margin-top: 30px;
   }
   .slide__img2 {
     margin-top: 30px;
