@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background: #01291A;">
   <section class="navigation">
     <div class="container">
       <div class="navigation__inner">
@@ -17,12 +17,119 @@
           <li><a href="slider.html">Продвижение</a></li>
           <li><a href="slider2.html">Разработка</a></li>
           <li><a href="slider3.html">Реклама</a></li>
+          <li>
+            <button class="btn btn-white__outline" data-modal="contactModal">
+              <span>Заказать SEO</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-white__outline" data-modal="contactModal2">
+              <span>Скидка</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
   </section>
 
+  <div class="modal modal1" id="contactModal">
+    <div class="modal__dialog">
+      <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+        <img src="images/close.svg" alt="">
+      </button>
+      <div class="modal__content">
+        <div class="modal__title">Заказать <span>SEO</span></div>
+        <form class="form">
+          <div class="form-group form-group--name">
+            <label class="input-title">Ваше Имя</label>
+            <input type="text" placeholder="">
+          </div>
+          <div class="form-group form-group--phone">
+            <label class="input-title">Телефон</label>
+            <input type="tel" placeholder="">
+          </div>
+          <div class="form-group form-group--email">
+            <label class="input-title">email</label>
+            <input type="tel" placeholder="">
+          </div>
+          <div class="form-check">
+            <input type="checkbox">
+            <label>Согласен на обработку <a href="">персональных данных</a></label>
+          </div>
+          <button class="form-btn btn btn-blue">
+            <span>Заказать</span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-img">
+        <img src="images/form-img.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal2" id="contactModal2">
+    <div class="modal__dialog">
+      <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+        <img src="images/close.svg" alt="">
+      </button>
+      <div class="modal__content">
+        <div class="modal__top">
+          <div class="discount">
+            <img src="images/discount-icon.svg" alt="">
+          </div>
+          <div class="modal__group">
+            <div class="modal__title2">вам <span>Скидка!</span></div>
+            <div class="modal__info">25% на первый месяц SEO продвижения или контекстной рекламы</div>
+          </div>
+        </div>
+        <div class="modal__form-wrap">
+          <div class="modal__text">Забронируйте сейчас, а применить сможете в любой момент - просто оставьте заявку, это
+            Вас ни к чему не обяжет!</div>
+          <form class="form">
+            <div class="form-grid">
+              <div class="form-group form-group--name">
+                <label class="input-title">Ваше Имя</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="form-group form-group--phone-email">
+                <label class="input-title">Телефон или email</label>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-checkboxes__wrap">
+              <div class="form-checkboxes__title">На что выбираем скиду?</div>
+              <div class="form-checkboxes">
+                <div class="form-checkbox">
+                  <input type="radio" name="form-checkbox">
+                  <label>SEO продвижение</label>
+                </div>
+                <div class="form-checkbox">
+                  <input type="radio" name="form-checkbox">
+                  <label>Интернет-реклама</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox">
+              <label>Согласен на обработку <a href="">персональных данных</a></label>
+            </div>
+            <div class="form-group">
+              <button class="form-btn form-btn2 btn btn-blue">
+                <span>Забронировать скидку</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-img2">
+        <img src="images/form-img2.png" alt="">
+        <img src="images/form-img2--1.png" alt="">
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="sliders.js"></script>
 </body>
 
@@ -32,6 +139,7 @@
   .navigation {
     padding: 50px 0;
     font-family: 'MuseoSansCyrl';
+    color: #fff;
   }
 
   .navigation__list {
@@ -47,5 +155,12 @@
 
   .navigation__list li a:hover {
     opacity: 0.7;
+  }
+
+  .navigation__list li button {
+    height: 60px;
+    padding: 5px 50px;
+    font-size: 20px;
+    line-height: 120%;
   }
 </style>
