@@ -1645,6 +1645,9 @@ li {
     bottom: 20px;
     max-width: 220px;
   }
+  .slider .swiper-pagination {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
