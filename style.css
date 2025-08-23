@@ -270,6 +270,9 @@ li {
   background: transparent;
   padding: 0
 }
+.modal__close:hover {
+  opacity: 0.6;
+}
 .modal__close img {
   width: 100%;
 }
@@ -311,6 +314,7 @@ li {
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
+  font-family: 'Roboto';
   font-size: 24px;
   line-height: 120%;
   font-weight: 700;
@@ -318,6 +322,9 @@ li {
 }
 .modal .form-group input::placeholder {
   color: #fff;
+}
+.modal .form-group input:focus ~ label {
+  opacity: 0.6;
 }
 .form-group--name input {
   padding-left: 94px;
@@ -389,7 +396,6 @@ li {
   font-family: 'Roboto';
   font-size: 14px;
   line-height: 160%;
-  text-decoration: underline;
   color: rgba(255, 255, 255, 0.7);
 }
 .modal .form-check label::before {
@@ -418,6 +424,7 @@ li {
 .modal .form-check label a {
   position: relative;
   z-index: 3;
+  text-decoration: underline;
 }
 .modal .form-check label a:hover {
   color: #fff;
@@ -434,8 +441,8 @@ li {
 }
 .modal-img2 {
   position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
   max-width: 540px;
 }
 .modal-img2 img {
@@ -450,7 +457,8 @@ li {
 }
 .modal2 .modal__dialog {
   max-width: 1000px;
-  padding: 45px 95px 60px;
+  padding: 40px 95px;
+  overflow: hidden;
 }
 .modal__top {
   padding-left: 195px;
@@ -641,6 +649,9 @@ li {
 .slide__flex--start {
   align-items: start;
 }
+.slide__flex--start {
+  align-items: start;
+}
 .slide__left {
   width: calc(100% - 390px);
   min-height: 550px;
@@ -826,6 +837,19 @@ li {
 .slider .swiper-pagination .swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
+}
+.slider .swiper-pagination .swiper-pagination-bullet::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.125s;
 }
 .slider .swiper-pagination .swiper-pagination-bullet::before {
   content: '';
@@ -1022,6 +1046,7 @@ li {
   flex-wrap: wrap;
   align-items: start;
   gap: 10px 20px;
+  padding-left: 10px;
   margin-top: 40px;
 }
 .slide__list3 {
@@ -1379,7 +1404,7 @@ li {
 @media screen and (max-width: 1600px) {
   .modal2 .modal__dialog {
     max-width: 900px;
-    padding: 35px 60px 60px 60px;
+    padding: 30px 60px;
   }
   .modal__top {
     padding-left: 180px;
@@ -1404,7 +1429,7 @@ li {
     font-size: 32px;
   }
   .modal-img2 {
-    max-width: 480px;
+    max-width: 490px;
   }
   .slide {
     min-height: 700px;
